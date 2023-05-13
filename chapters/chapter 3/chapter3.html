@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Chapter 3: Le Modèle OSI</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Le Modele OSI</h1>
+    </div>
+
+    <div>
+        <div class="container">
+            <section class="chapter">
+                <div class="chapter-image">
+                    <img src="images/PCI-EXPRESS-607.jpg" alt="PCI">
+                </div>
+                <div class="chapter-content">
+                    <h3>Les cartes réseau</h3>
+                    <p>Une carte réseau est un composant matériel qui permet à un ordinateur de se connecter à un réseau informatique via Ethernet ou Wi-Fi. Elle gère les communications entre l'ordinateur et le réseau</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <section class="chapter">
+                <div class="chapter-image">
+                    <img src="images/Ciscos-Industry-Standard-Network-Switch.png" alt="Ciscos">
+                </div>
+                <div class="chapter-content">
+                    <h3>Switch</h3>
+                    <p>Un switch est un équipement réseau qui permet de connecter plusieurs périphériques entre eux au sein d'un réseau
+                        local.
+                        Il analyse les adresses MAC des périphériques connectés pour acheminer les données uniquement vers le
+                        périphérique
+                        destinataire, ce qui réduit la congestion du réseau par rapport à un hub</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <section class="chapter">
+                <div class="chapter-image">
+                    <img src="images/17-111-503-07.jpg" alt="PCI">
+                </div>
+                <div class="chapter-content">
+                    <h3>Hub</h3>
+                    <p>Un hub est un équipement réseau qui permet de connecter plusieurs périphériques entre eux au sein d'un réseau
+                        local. Il
+                        fonctionne en diffusant les données à tous les périphériques connectés, ce qui peut entraîner une congestion du
+                        réseau.
+                        Les hubs sont donc moins efficaces que les switches pour transférer les données. Les hubs sont généralement
+                        moins
+                        utilisés de nos jours car les switches offrent des performances plus élevées</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="heading">
+
+        <h2>2 - Le Modele OSI</h2>
+        <h4>Le modèle OSI (Open Systems Interconnection) est un modèle de référence qui décrit comment les différents
+            composants
+            d'un réseau informatique communiquent entre eux. Il est composé de 7 couches, chacune ayant un rôle spécifique
+            dans la
+            communication des données :
+        </h4>
+
+    </div>
+
+    <ul>
+        <li>La couche physique : elle définit les caractéristiques électriques, mécaniques et fonctionnelles des
+            connexions
+            physiques du réseau.</li>
+        <li>La couche liaison de données : elle permet d'assurer une communication fiable entre les nœuds du réseau en
+            détectant et
+            corrigeant les erreurs de transmission.</li>
+        <li>La couche réseau : elle permet de gérer la transmission des données à travers le réseau en utilisant des
+            protocoles de
+            routage.</li>
+        <li>La couche transport : elle permet d'assurer une communication fiable et transparente entre les applications
+            en
+            segmentant les données et en contrôlant leur transmission.</li>
+        <li>La couche session : elle permet d'ouvrir, de maintenir et de fermer des sessions de communication entre les
+            applications.</li>
+        <li>La couche présentation : elle permet de gérer la représentation des données pour les rendre compréhensibles
+            par les
+            applications.</li>
+        <li>La couche application : elle permet d'interagir avec les applications utilisateurs.</li>
+    </ul>
+    <div class="heading">
+    
+        <p>-En utilisant le modèle OSI, les fabricants de matériel et de logiciels peuvent concevoir des produits compatibles
+            avec
+            les différents composants d'un réseau informatique, assurant ainsi une interopérabilité entre les équipements de
+            différents fournisseurs.</p>    
+    </div>
+    <div class="heading">
+            
+        <h2>3 - Le Modèle TCP/IP</h2>
+        <h4>Le modèle TCP/IP (Transmission Control Protocol/Internet Protocol) est un modèle de communication qui décrit
+           comment les
+            ordinateurs communiquent entre eux sur Internet. Il est composé de 4 couches, chacune ayant un rôle spécifique
+            dans la
+            transmission des données :</h4>
+            
+    </div>
+    <ul>
+        <li>La couche réseau : elle est responsable de la transmission des paquets de données sur le réseau et utilise
+            le protocole
+            Internet (IP) pour acheminer les paquets de données vers leur destination.</li>
+        <li>La couche transport : elle permet d'assurer une communication fiable entre les applications en utilisant le
+            protocole de
+            transport TCP ou le protocole d'datagramme utilisateur (UDP).</li>
+        <li>elle fournit des services de communication pour les applications, telles que le protocole HTTP pour les
+            sites web, le
+            protocole SMTP pour les emails, le protocole FTP pour le transfert de fichiers, etc.</li>
+        <li>La couche interface réseau : elle est responsable de la transmission des données entre les ordinateurs et
+            les réseaux
+            physiques.</li>
+    </ul>
+    <div class="heading">
+
+        <p>-Le modèle TCP/IP est largement utilisé dans les réseaux informatiques, en particulier sur Internet. Les
+            différents
+            équipements réseau (routeurs, commutateurs, etc.) et les ordinateurs doivent être configurés avec des adresses
+            IP
+            uniques pour communiquer sur le réseau.</p>
+    </div>
+    
+    <div class="heading">
+
+        <h2>Adressage</h2>
+        <h4>Les communications dans un réseau obéissent à des règles</h4>
+    
+    </div>
+    <ul>
+        <li>Adressage qui permet d'identifier de manière unique les deux unités en
+            communication</li>
+        <li>Architecture qui définit les rôles endossés par les deux unités</li>
+        <li>Protocoles qui assurent l'échange des données</li>
+    </ul>
+    <div class="heading">
+
+        <h3>L'adressage IP</h3>
+        <h4>est le numéro qui identifie chaque ordinateur dans les réseaux
+        qu’il appartient. Il y’a deux mode d’adressage IPV4 et IPV6 :</h4>
+
+    </div>
+    <ul>
+        <li>ADRESSE IPV4: Chaque paquet contient adresse source sur (32 bits) et une adresse destinataire sur
+            (32bits)<br>Donc IPV 4 == 4 octets ==32 bits
+        </li>
+        <li>ADRESSE IPV6 : Les adresses sont codées sur 128 bits. La représentation textuelle se fait en
+            découpant le mot de 128 bits de l'adresse en 8 mots de 16 bits séparés par le
+            caractère «:», chacun d'eux est en hexadécimal</li>
+    </ul>
+    <div class="heading">
+
+        <h2>Adresse IPV4</h2>
+
+    </div>
+    
+    <ul>
+        <li>Chaque adresse IPV4 contient deux parties :</li>
+        <ul>
+            <li>Une première partie des bits de valeur supérieur : Adresse réseau</li>
+            <li>Une deuxième parties des bits : Adresse hôte</li>
+        </ul>
+        <li>On reconnait qu’un réseau est un {hôte} quand la valeur des bits pour la partie réseau est la
+            même</li>
+        <li>Le nombre des bits contenus dans la partie hôtes détermine le nombre des machines
+            possible sur ce réseau</li>
+    </ul>
+    <div class="heading">
+
+        <h3>Les différents types d’adresse IPV4</h3>
+        
+    </div>
+    
+    <ul>
+        <li>Adresse réseau : tous les bits de la partie hôtes=0 exemple:( 10.0.0.0) ,c'est-à-dire tous les
+            hôtes(machines) de ce réseau ont la même partie réseau</li>
+        <li>Adresse diffusion : c'est une adresse spéciale qui est utilisée pour envoyer des données à tous les
+            périphériques
+            sur un réseau. Elle est généralement utilisée pour envoyer des messages de diffusion ou pour détecter des
+            périphériques
+            sur le réseau.</li>
+        <li>Adresse hôte : est la partie unique de l'adresse IP d'un périphérique sur un réseau, utilisée pour
+            l'acheminement des
+            données vers ce périphérique spécifique. Elle est composée des derniers octets de l'adresse IPv4.</li>
+        <li>Le masque de réseau et de sous réseaux : Tous les bits de la partie réseaux = 1</li>
+    </ul>
+</body>
+
+</html>

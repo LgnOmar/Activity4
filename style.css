@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #f2f2f2;
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+
+
+.chapter-heading h3{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.chapter-heading h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+
+.heading .chapter-heading h3{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.chapter-image:hover img{
+    transform: scale(1.2);
+}
+
+/*   les chapitres   */
+
+#Chapters{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.chapter-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chapter-heading span{
+    color: #f33c3c;
+}
+
+.chapter-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.chapter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+
+}
+
+.chapter-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+
+}
+
+.chapter-img{
+    width: 100%;
+    height: auto;
+}
+.chapter-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.chapter-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.chapter-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.chapter-text .chapter-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.chapter-text .chapter-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.chapter-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.chapter-text a{
+    color: #0f0f0f;
+}
+.chapter-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+@media(max-width: 1250px){
+    .chapter-box{
+        width: 300px;
+    }
+}
+@media(max-width: 1100px){
+    .chapter-box{
+        width: 70%;
+    }
+}
+@media(max-width: 550px){
+    .chapter-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #Chapters{
+        padding: 20px;
+    }
+}

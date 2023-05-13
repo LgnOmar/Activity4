@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Chapter 5: Système de Gestion de Version</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Système de Gestion de Version</h1>
+    </div>
+
+    
+    <div class="heading">
+        <h2>1 - Qu’est-ce que Git ?</h2>
+        <h4>Git est un système de contrôle de version open-source largement utilisé pour le développement de logiciels. Il permetaux développeurs de travailler sur des projets simultanément tout en gardant une trace des modificationsapportées à chaque fichier. Les développeurs peuvent créer des "branches" pour expérimenter de nouvelles fonctionnalités,fusionne des modifications en provenance de différentes sources, et conserver un historique de toutes les modificationsapportéesà un projet. Git est également populaire pour sa rapidité, sa flexibilité et sa compatibilité multiplateforme.</h4>
+
+    </div>
+
+    <div class="heading">
+        <h2>2 - A quoi sert concrètement un système de gestion de version ?</h2>
+        <h4>Un système de gestion de version est un outil informatique qui permet de suivre et de gérer les modifications apportées à un ensemble de fichiers ou à un projet de développement logiciel au fil du temps. Concrètement, il permet de :</h4>
+    </div>
+    <ul>
+        <li>Garder une trace de toutes les modifications apportées à un projet et de les associer à des informations sur
+            l'auteur,
+            la date et le contenu des modifications.</li>
+        <li>Permettre à plusieurs personnes de travailler simultanément sur un même projet et de fusionner leurs
+            modifications de
+            manière transparente.</li>
+        <li>Retourner à n'importe quelle version antérieure d'un projet à tout moment, en cas de besoin ou d'erreur.
+        </li>
+        <li>Faciliter la collaboration et la communication entre les membres d'une équipe de développement.</li>
+        <li>Permettre la création de branches pour tester de nouvelles fonctionnalités sans affecter le code existant.
+        </li>
+        <li>Faciliter le déploiement de nouvelles versions de logiciels sur des serveurs ou des ordinateurs clients.
+        </li>
+    </ul>
+
+    <div class="heading">
+        <h2>3 - Utiliser Git : ligne de commande, console</h2>
+    </div>
+    <h4>Voici les étapes de base pour utiliser Git :</h4>
+
+    <ul>
+        <li>Installer Git sur votre ordinateur et configurer votre nom d'utilisateur et votre adresse e-mail.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/configurer git.PNG" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Installer Git:</h3>
+                        <p>Installer Git sur votre ordinateur et configurer votre nom d'utilisateur et votre adresse e-mail.</p>
+                        <p>Type: git config --global user.name "Bouchekir Redouane</p>
+                        <p>Type: git config --global user.email redouane.bouchekir@gmail.com</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <li>Créer un nouveau projet ou cloner un projet existant.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/git-add.png" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Créer un projet:</h3>
+                        <p>-Créer un nouveau projet ou cloner un projet existant à partir d'un dépôt Git distant (par exemple, GitHub).</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <li>Ajouter des fichiers à votre projet.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/GitCommit1.jpg" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Ajouter des fichiers:</h3>
+                        <p>-Ajouter des fichiers à votre projet et les valider en utilisant la commande git add pour les ajouter à l'index de Git, puis la commande git commit pour valider les modifications.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <li>Envoyer vos modifications sur le dépôt distant en utilisant la commande git push.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/GitPush3.jpg" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Envoyer vos modifications sur le dépôt:</h3>
+                        <p>-Envoyer vos modifications sur le dépôt distant en utilisant la commande git push. Si d'autres personnes ont également travaillé sur le projet, vous devrez d'abord récupérer leurs modifications en utilisant la commande git pull avant depousser vos modifications.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/GitPush3.jpg" alt="PCI">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <li>Créer des branches pour expérimenter de nouvelles fonctionnalités sans affecter le code existant.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/gitcheckout branch.png" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Créer des branches:</h3>
+                        <p>-Créer des branches pour expérimenter de nouvelles fonctionnalités sans affecter le code existant. Vous pouvez utiliser la commande git branch pour créer une nouvelle branche et git checkout pour basculer entre les branches.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <li>Créer des branches pour expérimenter de nouvelles fonctionnalités sans affecter le code existant.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/merged1.png" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Créer des branches:</h3>
+                        <p>-Créer des branches pour expérimenter de nouvelles fonctionnalités sans affecter le code existant. Vous pouvez utiliser la commande git branch pour créer une nouvelle branche et git checkout pour basculer entre les branches.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        
+
+        <li>Utiliser des commandes Git supplémentaires telles que git log pour afficher l'historique des modifications.</li>
+        <div>
+            <div class="container">
+                <section class="chapter">
+                    <div class="chapter-image">
+                        <img src="images/git status.png" alt="PCI">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>Utiliser des commandes Git supplémentaires:</h3>
+                        <p>-Utiliser des commandes Git supplémentaires telles que git log pour afficher l'historique des modifications, git status pour vérifier l'état de votre projet et git stash pour stocker temporairement des modifications non validées.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </ul>
+
+    <div class="heading">
+        <h2>4 - Qu’est ce qu’une branche ?</h2>
+        <h4>En Git, une branche est une ligne de développement indépendante qui permet de travailler sur une fonctionnalité ou une correction de bug sans affecter le code principal ou la branche "master". Lorsque vous créez une branche dans Git, vous pouvez travailler sur cette branche en toute sécurité, en apportant des modifications et en effectuant des validations sans affecter le code principal. Une fois que vous avez terminé votre travail sur la branche, vous pouvez fusionner la branche avec la branche principale pour intégrer vos modifications. Les branches permettent également de travailler en équipe de manière collaborative sur un même projet, en permettant à différents membres de travailler sur des fonctionnalités ou des corrections de bugs distinctes en parallèle, sans affecter le travail des autres membres de l'équipe. En résumé, les branches sont un élément clé du workflow de Git et permettent de travailler de manière efficace et organisée sur des projets de développement logiciel.</h4>
+        <h2>5 - Les zones de travail</h2>
+        <h4>En Git, les zones de travail (ou "working directory") sont l'endroit où vous pouvez travailler sur les fichiers de votre projet. Lorsque vous effectuez des modifications sur les fichiers de votre projet, celles-ci sont stockées dans la zone de travail. Les modifications doivent être ajoutées à l'index de Git avant d'être validées, ce qui vous permet de contrôler les modifications apportées au projet et de gérer leur historique. Les zones de travail sont un élément clé de la gestion de version avec Git, car elles permettent aux développeurs de travailler sur des fichiers sans affecter la version principale du projet. Les zones de travail permettent également de faciliter le travail collaboratif en permettant à plusieurs développeurs de travailler sur différentes fonctionnalités en même temps, chacun dans leur propre zone de travail.</h4>
+
+    </div>
+
+    <div>
+        <div class="container">
+            <section class="chapter">
+                <div class="chapter-image">
+                    <img src="images/zone de travail.png" alt="PCI">
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
